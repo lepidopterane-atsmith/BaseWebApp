@@ -17,7 +17,7 @@ function initializeStreamListener() {
     if (messages) {
       Object.keys(messages).forEach(function (key) {
         const message = messages[key];
-        $('#stream').append(`<div>${message.body}</div>`);
+        $('#stream').append(`<div><p><b>${message.author}</b> said: </p>${message.body}</div>`);
       });
     }
   });
