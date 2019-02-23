@@ -48,6 +48,8 @@ function handleMessageFormSubmit() {
   var body = $('#new-post-body').val();
   var title = $('#new-post-title').val();
 
+  console.log(body);
+
   addMessage(body, title);
 }
 
